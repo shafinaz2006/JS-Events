@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="https://github.com/shafinaz2006/MyBlog/blob/master/logoS.PNG?raw=true">
+
+    <link rel='stylesheet' type='text/css' href='js_events_styles.css'>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>JS events</title>
+
+</head>
+
+<body>
+
+    <div id='main'>
+
+        <div id='header'>
+
+            <h1>Hello JS events !!!</h1>
+
+        </div>
+
+        <div class='firstRow'>
+
+            <div class='testbox'>
+
+                <h4> Prompt </h4>
+
+                <p> Click on Prompt button to check prompt effect </p>
+
+                <button id='myPrompt' class='btn btn-primary'> Prompt </button>
+
+                <h5 id='promptResult' class='h5Style'> You like: </h5>
+
+            </div>
+
+            <div class='testbox'>
+
+                <h4> Confirm </h4>
+
+                <p> Click on Confirm button to check confirm effect </p>
+
+                <button id='myConfirm' class='btn btn-primary'> Confirm </button>
+
+                <h5 class='h5Style'> Do you like JS : <span id='confirmResult'></span></h5>
+
+            </div>
+
+            <div class='testbox'>
+
+                <h4> Timer (setTimeOut()) </h4>
+
+                <p id='setTimeOutEffect'>
+
+                    This paragraph has setTimeOut effect.
+
+                    <strong style='color: red; cursor: pointer'>Click Here!</strong>
+                </p>
+                <p>
+                    (wait 5 seconds to see the effect)
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class='firstRow'>
+
+            <div class='testbox'>
+
+                <h4> setInterval() </h4>
+
+                <p id='setIntervalEffect'> This paragraph has setInterval effect.
+
+                    <strong style='cursor: pointer'>Click Here! </strong>
+
+                </p>
+
+                <p>
+
+                    (wait 2 seconds to see the effect)
+
+                </p>
+
+                <p> clearInterval() is needed to stop the interval effect</p>
+
+                <button id='stopInterval' class='btn btn-primary'>Click to clearInterval </button>
+
+
+            </div>
+
+            <div class='testbox'>
+
+                <h4> Mouseover </h4>
+
+                <p class='mouseoverP'> The paragraph style will change </p>
+
+                <p> In this example, classlist.add(class) is used. So, the change is fixed.</p>
+                <p> If classlist.toggle(class) is used, the mouseover will switch between two styles.</p>
+
+            </div>
+
+        </div>
+
+        <div class='firstRow'>
+
+            <div class='testbox'>
+
+                <h4> Checkbox </h4>
+
+                <label> Do you agree? </label>
+
+                <input type='checkbox' name='checkbox1' id='checkbox1'>
+
+                <p id='checkboxP'> </p>
+
+            </div>
+
+            <div class='testbox'>
+
+                <h4> Toggle </h4>
+
+                <p class='toggleP'> The border style will change </p>
+
+                <button id='toggle1' class='toggle1 btn btn-primary'> Click to toggle! </button>
+
+            </div>
+
+
+
+            <div class='testbox'>
+
+                <h4> Hoverover </h4>
+
+                <p>What is hoverover? </p>
+
+                <p class='hoverP'>Point your mouse <strong> here </strong> for answer.
+
+                    <span class='hoverSpan'>Displaying text on mouseover.</span>
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class='firstRow'>
+
+            <div class='testbox'>
+
+                <h4> Radio Button </h4>
+                <h5> Submit event </h5>
+
+                <label> What is your favourite fruit? </label>
+
+                <form id='radioForm'>
+                    <div>
+                        <input type='radio' name='radio1' id='apple' value='Apple'>
+                        <label for='apple'>Apple</label>
+                    </div>
+                    <div>
+                        <input type='radio' name='radio1' id='orange' value='Orange'>
+                        <label for='orange'>Orange</label>
+                    </div>
+                    <div>
+                        <input type='radio' name='radio1' id='banana' value='Banana'>
+                        <label for='banana'>Banana</label>
+                    </div>
+                    <button type='submit' id='radiobtnSubmit' class='btn btn-success'>Submit </button>
+
+                </form>
+
+                <p> Your favourite fruit is: <span id='radioSpan'> </span> </p>
+
+            </div>
+
+            <div class='testbox'>
+
+                <h4> Radio Button</h4>
+                <h5> Input event </h5>
+
+                <label> What is your favourite color? </label>
+
+                <form>
+
+                    <div>
+                        <input type='radio' name='color' id='blue' value='Blue' checked>
+                        <label for='blue'> Blue </label>
+                    </div>
+                    <div>
+                        <input type='radio' name='color' id='purple' value='Purple'>
+                        <label for='purple'> Purple </label>
+                    </div>
+                    <div>
+                        <input type='radio' name='color' id='green' value='Green'>
+                        <label for='green'> Green </label>
+                    </div>
+
+                </form>
+
+                <p> Your favourite color is: <span id='colorRadioSpan'> Blue </span> </p>
+
+            </div>
+
+        </div>
+
+        <div class='firstRow'>
+
+            <div class='testbox'>
+
+                <h4> Blur Effect </h4>
+
+                <p class='guessImageDiv'> Who is in this picture? </p>
+
+                <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/1200px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg' alt='guessWho' id='guessImage'>
+
+                <form id='guessImageForm'>
+                    <div>
+                        <input type='textarea' row='1' name='guessName' id='guessName'>
+                    </div>
+
+                    <button type='submit' id='guessNameSubmit' class='btn btn-primary'>Submit </button>
+
+                </form>
+
+                <p id='guessImageResult'> </p>
+
+            </div>
+
+            <div class='testbox'>
+
+                <h4> Getting coordinates </h4>
+
+                <p> Click to the treasure!!!</p>
+
+                <img src='https://w7.pngwing.com/pngs/81/303/png-transparent-brown-and-green-puzzle-game-treasure-island-treasure-map-looking-for-treasure-maps-text-stone-piracy.png' alt='treasureHuntImage' id='coordinateFindImage'>
+
+                <p id='coordinateFindP'>
+                    <p>
+
+            </div>
+
+            <div class='testbox'>
+
+                <h4> Blur </h4>
+                <p> This text box will be blurred or focused. </p>
+                <div>
+                    <label for='blurText'> Name: </label>
+                    <input type='text' name='blurText' id='blur'>
+                </div>
+                <button id='focus1' class='btn btn-primary'> Click to focus </button>
+                <button id='blur1' class='btn btn-primary'>Click to blur</button>
+
+            </div>
+
+        </div>
+
+        <div class='firstRow'>
+
+            <div class='testbox'>
+
+                <h4> Detecting OS, Window property </h4>
+                <p id='os'> The Operating System is: <span id='ospan'></span></p>
+                <p id='windowHeight'></p>
+
+            </div>
+
+            <div class='testbox'>
+
+                <h4> Slider Switch </h4>
+
+                <div class='toggle'>
+
+                    <span class='span1'> Night </span>
+
+                    <label class='switch'>
+        
+                        <input type = 'checkbox' id = 'checkboxSlider'>
+                        <span class = 'slider round'></span>
+        
+                    </label>
+
+                    <span class='span1'> Day </span>
+
+                </div>
+
+                <p style='margin-top: 0.7rem;'> The following text changes.</p>
+                <p class='sliderSwitchP'> You are in Day mood! </p>
+
+            </div>
+        </div>
+
+
+        <div style='margin-bottom: 1rem'>
+            Coded by: <a href="#">shafinaz2006</a>.
+        </div>
+
+    </div>
+
+    <script src='js_Logic.js'></script>
+
+</body>
+
+</html>
